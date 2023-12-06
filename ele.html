@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://kit.fontawesome.com/b198138bf0.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Imagens/Icon.ico" type="image/x-icon">
+<title> Eletrônica </title>
+<script type="text/javascript" src="js/jquery-3.4.0.js">
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$("#4_ou_5").on("click", function(){
+	hideShow();
+  });
+	hideShow();
+});
+ 
+function hideShow() 
+{
+  if ($('#4Faixas').is(':checked')) 
+  {
+	  $('#terc_faixa').hide();
+      
+  } 
+  else 
+  {
+	  $('#terc_faixa').show();
+  }
+}
+</script>
+<style>
+p{
+    color: #ffff;
+    font-family: Comic sans-serif;
+    font-size: large;
+}
+h1{
+    text-align: center;
+    color: #ffff
+}
+body{
+    margin:30px;
+    background-color:rgb(24, 26, 36);
+ } 
+.btn-link{
+        text-decoration: none;
+        border-radius: 8px;
+        border: 1px solid #000;
+        width: 120px;
+        text-align: center;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        background-color: #063146;
+        color: #FFF;
+
+    }
+    .btn-link:hover {
+        box-shadow: 2px 2px 2px #000;
+    }
+    .btn-link2{
+        text-decoration: none;
+        border-radius: 8px;
+        border: 1px solid #000;
+        left: -250px;
+         width: 250px;
+        height: 100%;
+        text-align: center;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        background-color: #063146;
+        color: #FFF;
+
+    }
+    .btn-link2:hover {
+        box-shadow: 2px 2px 2px #000;
+    } 
+</style>
+</head>
+
+<body>
+    <a class="btn-link" href="Index.html"><i class="fa-solid fa-house"></i></a>
+    <h1> Eletrônica </h1>
+<p> <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Teste</title>
+    </head>
+    <body>
+        <form action="CalculadoraResistor.php" method="POST">
+            <center>
+        <fieldset style="width: 50%;">
+        <select name="pri_faixa">
+            <option value="Erro" selected>Selecione uma cor</option>
+            <option value="0" style="background-color:black;color:white;">Preto(0)</option>
+            <option value="1" style="background-color:brown;color:white;">Marrom(1)</option>
+            <option value="2" style="background-color:red;color:white;">Vermelho(2)</option>
+            <option value="3" style="background-color:orange;color:white;">Laranja(3)</option>
+            <option value="4" style="background-color:yellow;color:black;">Amarelo(4)</option>
+            <option value="5" style="background-color:green;color:white;">Verde(5)</option>
+            <option value="6" style="background-color:blue;color:white;">Azul(6)</option>
+            <option value="7" style="background-color:darkviolet;color:white;">Violeta(7)</option>
+            <option value="8" style="background-color:gray;color:white;">Cinza(8)</option>
+            <option value="9" style="background-color:white;color:black;">Branco(9)</option>
+        </select>
+    
+        <select name="seg_faixa">
+            <option value="Erro" selected>Selecione uma cor</option>
+            <option value="0" style="background-color:black;color:white;">Preto(0)</option>
+            <option value="1" style="background-color:brown;color:white;">Marrom(1)</option>
+            <option value="2" style="background-color:red;color:white;">Vermelho(2)</option>
+            <option value="3" style="background-color:orange;color:white;">Laranja(3)</option>
+            <option value="4" style="background-color:yellow;color:black;">Amarelo(4)</option>
+            <option value="5" style="background-color:green;color:white;">Verde(5)</option>
+            <option value="6" style="background-color:blue;color:white;">Azul(6)</option>
+            <option value="7" style="background-color:darkviolet;color:white;">Violeta(7)</option>
+            <option value="8" style="background-color:gray;color:white;">Cinza(8)</option>
+            <option value="9" style="background-color:white;color:black;">Branco(9)</option>
+        </select><br><br>
+    
+    <div id="terc_faixa">
+        <select name="terc_faixa">
+            <option value="Erro" selected>Selecione uma cor</option>
+            <option value="0" style="background-color:black;color:white;">Preto(0)</option>
+            <option value="1" style="background-color:brown;color:white;">Marrom(1)</option>
+            <option value="2" style="background-color:red;color:white;">Vermelho(2)</option>
+            <option value="3" style="background-color:orange;color:white;">Laranja(3)</option>
+            <option value="4" style="background-color:yellow;color:black;">Amarelo(4)</option>
+            <option value="5" style="background-color:green;color:white;">Verde(5)</option>
+            <option value="6" style="background-color:blue;color:white;">Azul(6)</option>
+            <option value="7" style="background-color:darkviolet;color:white;">Violeta(7)</option>
+            <option value="8" style="background-color:gray;color:white;">Cinza(8)</option>
+            <option value="9" style="background-color:white;color:black;">Branco(9)</option>
+        </select>
+    </div><br>
+    
+        <select name="quar_faixa">
+            <option value="Erro" selected>Selecione uma cor</option>
+            <option value="1" style="background-color:black;color:white;">Preto(1)</option>
+            <option value="10" style="background-color:brown;color:white;">Marrom(10)</option>
+            <option value="100" style="background-color:red;color:white;">Vermelho(100)</option>
+            <option value="1000" style="background-color:orange;color:white;">Laranja(1K)</option>
+            <option value="10000" style="background-color:yellow;color:black;">Amarelo(10K)</option>
+            <option value="100000" style="background-color:green;color:white;">Verde(100K)</option>
+            <option value="1000000" style="background-color:blue;color:white;">Azul(1M)</option>
+            <option value="10000000" style="background-color:darkviolet;color:white;">Violeta(10M)</option>
+            <option value="100000000" style="background-color:gray;color:white;">Cinza(100M)</option>
+            <option value="1000000000" style="background-color:white;color:black;">Branco(1B)</option>
+            <option value="0.1" style="background-color:goldenrod;color:black;">Ouro(0.1)</option>
+            <option value="0.01" style="background-color:silver;color:black;">Prata(0.01)</option>
+        </select>
+    
+        <select name="quin_faixa">
+            <option value="Erro" selected>Selecione uma cor</option>
+            <option value="± 1%" style="background-color:brown;color:white;">Marrom(± 1%)</option>
+            <option value="± 2%" style="background-color:red;color:white;">Vermelho(± 2%)</option>
+            <option value="± 5%" style="background-color:goldenrod;color:black;">Ouro(± 5%)</option>
+            <option value="± 10%" style="background-color:silver;color:black;">Prata(± 10%)</option>
+            <option value="± 20%" style="background-color:white;color:black;">Branco(± 20%)</option>
+        </select><br><br>
+
+    <div id="4_ou_5">
+        <p>
+        <input type="radio" id="4Faixas" name="NumFaixas" value="4" checked>
+        <label for="4">4 Faixas</label>
+        <input type="radio" id="5Faixas" name="NumFaixas" value="5">
+        <label for="5">5 Faixas</label><br>
+        </p>
+    </div>
+    
+        <br><input class="btn-link2" type="submit" value="Calcular"></center>
+<br><br></fieldset>
+        <table>
+            <tr>
+              <td><img src="Imagens/TabelaResistor.PNG" width="550" height="400"></td>
+              <td><h1><p><legend>Como usar a calculadora:</legend></p></h1><br>
+
+                <p>1° Passo: Identifique se o resistor possui 4 ou 5 faixas e selecione a opção.<br>
+                <br>
+                2° Passo: Tenha certeza que o resistor esteja na posição correta(a faixa mais distante deve estar a direita).<br>
+                <br>
+                3° Passo: Coloque as cores do resistor nos campos indicados se baseando na tabela.<br>
+                <br>
+                4° Passo: Certifique-se que as cores estão corretas.<br>
+                <br>
+                Pronto! Você tem seu resultado. </p></td> 
+            </tr>
+          </table>
+    </form>
+    </body>
+    </html></p>
+
+
+    
+</body>
+</html> 
+</html>
